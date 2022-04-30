@@ -11,12 +11,12 @@ function solution(input, markers) {
             str = str.slice(0, str.indexOf(marker)).trim();
             result += str + "\n";
         }   
-    })
+    });
     return result.slice(0, -1);
-};
+}
 
 
-const result = solution("apples, plums % and bananas\npears\noranges !applesauce", ["%", "!"])
+const result = solution("apples, plums % and bananas\npears\noranges !applesauce", ["%", "!"]);
 
 /**
  * Complete the solution so that it strips all text 
