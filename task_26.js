@@ -2,9 +2,8 @@
 
 function domainName(url) { 
     const a = /^(http[s]?:\/\/)*[www]*[\.]*/;
-    const str = url.replace(a, '');
     const b = /[A-Z0-9_-]*/i;
-    return str.match(b, '')[0];
+    return url.replace(a, '').match(b, '')[0];
 }
 
 console.log(domainName("9d9eguj2w.biz/img/"));
